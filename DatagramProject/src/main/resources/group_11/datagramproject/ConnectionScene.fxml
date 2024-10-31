@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="451.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group_11.datagramproject.ConnectionController">
+   <children>
+      <Label layoutX="50.0" layoutY="75.0" text="Address:" />
+      <Label layoutX="50.0" layoutY="175.0" text="UDP Port:" />
+      <Label layoutX="50.0" layoutY="275.0" text="TCP Port:" />
+      <TextField fx:id="addressTxt" layoutX="50.0" layoutY="100.0" prefWidth="300.0" />
+      <TextField fx:id="udpIDTxt" layoutX="50.0" layoutY="200.0" prefWidth="300.0" />
+      <TextField fx:id="tcpIDTxt" layoutX="50.0" layoutY="300.0" prefWidth="300.0" />
+      <Button fx:id="connectBtn" layoutX="163.0" layoutY="396.0" mnemonicParsing="false" onAction="#onConnectBtn" prefWidth="75.0" text="Connect" />
+   </children>
+</AnchorPane>

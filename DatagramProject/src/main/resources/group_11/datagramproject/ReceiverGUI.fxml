@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="432.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group_11.datagramproject.ReceiverController">
+   <children>
+      <ScrollPane layoutX="11.0" layoutY="99.0" prefHeight="240.0" prefWidth="247.0">
+         <content>
+            <VBox fx:id="filesTCP" prefHeight="238.0" prefWidth="245.0" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="122.0" layoutY="67.0" text="TCP" />
+      <ScrollPane layoutX="264.0" layoutY="99.0" prefHeight="240.0" prefWidth="247.0">
+         <content>
+            <VBox fx:id="filesUDP" prefHeight="238.0" prefWidth="245.0" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="375.0" layoutY="67.0" text="UDP" />
+      <ProgressBar fx:id="pgrBarTCP" layoutX="35.0" layoutY="353.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar fx:id="pgrBarUDP" layoutX="288.0" layoutY="353.0" prefWidth="200.0" progress="0.0" />
+   </children>
+</AnchorPane>

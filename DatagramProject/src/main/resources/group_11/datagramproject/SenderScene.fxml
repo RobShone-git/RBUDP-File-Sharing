@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group_11.datagramproject.SenderController">
+    <children>
+        <Button layoutX="75.0" layoutY="75.0" mnemonicParsing="false" onAction="#onSelectBtn" text="Select File" />
+        <Label layoutX="75.0" layoutY="125.0" text="File Selected:" underline="true" />
+        <Label fx:id="filePath" layoutX="75.0" layoutY="150.0" text="Label" visible="false" />
+        <Button fx:id="btnSendUDP" disable="true" layoutX="300.0" layoutY="425.0" mnemonicParsing="false" onAction="#onSendUDPBtn" text="Send RBUDP" />
+        <Slider fx:id="packetSizeSld" layoutX="75.0" layoutY="250.0" majorTickUnit="8000.0" max="64000.0" minorTickCount="5" prefWidth="450.0" showTickLabels="true" showTickMarks="true" value="50.0" />
+        <Slider fx:id="blastLengthSld" layoutX="75.0" layoutY="355.0" majorTickUnit="1000.0" minorTickCount="5" max="10000.0" prefWidth="450.0" showTickLabels="true" showTickMarks="true" />
+        <Button fx:id="btnSendTCP" disable="true" layoutX="200.0" layoutY="425.0" mnemonicParsing="false" onAction="#onSendTCPBtn" text="Send TCP" />
+        <Label layoutX="80.0" layoutY="220.0" text="Packet size (RBUDP only)" />
+        <Label layoutX="80.0" layoutY="325.0" text="Blast length (RBUDP only)" />
+      <TextField fx:id="txtPacketSliderAmount" layoutX="382.0" layoutY="216.0" prefHeight="24.0" prefWidth="80.0" />
+      <TextField fx:id="txtBlastSliderAmount" layoutX="382.0" layoutY="329.0" prefHeight="24.0" prefWidth="80.0" />
+    </children>
+</AnchorPane>
